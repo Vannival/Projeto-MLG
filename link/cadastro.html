@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link href="" type="text/Css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <img src="/imagens/Novo logo ouro.png" alt="Logo MLG" width="200px"/>
+    </header>
+    <main>
+        <h1>Cadastro</h1>
+        <!--Neste formulário de cadastro contém 
+            campos para nome, e-mail e senha. O formulário está configurado para enviar 
+            os dados para um arquivo chamado "processar_cadastro.php" 
+            usando o método POST. Certifique-se de criar esse arquivo "processar_cadastro.php" para processar 
+            os dados do formulário, como salvar no banco de dados ou realizar outras ações necessárias. 
+            Além disso, você pode personalizar o formulário e adicionar mais campos conforme necessário.--->
+        <form action="processar_cadastro.php" method="post">
+           
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+</body>
+</html>
